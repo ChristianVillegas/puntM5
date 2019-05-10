@@ -48,4 +48,7 @@ public class Segment {
 		this.y2 = y2;
 	}
 	
+	public void longitud(Segment s) {
+	double longitud = Math.sqrt(Math.pow(x1-x2, 2) + Math.pow(y1-y2, 2));
+	}
 }
