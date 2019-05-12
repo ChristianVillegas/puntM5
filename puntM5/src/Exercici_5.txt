@@ -1,0 +1,8 @@
+Exercici 5. Un sol error per test
+Descriu amb les teves paraules la resposta al FAQ 4.10
+
+
+Segons la resposta, JUnit està dissenyat per a mostrar un sol error, per aquest fet, crear un multi-test no és una tasca recomenable ja que només ens mostrarà un únic error
+i no el de tot el conjunt, cosa que obliga a barallar-se amb els tests.
+Per aquesta raó, lo més optim, ja que volem verificar que a cada pas del nostre codi no ens aparegui un error, és fer tests senzills separats per cada afirmació (assertion).
+D'aquesta manera sí rebrem feedback real de la qualitat del nostre codi. 
