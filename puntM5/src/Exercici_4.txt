@@ -1,0 +1,7 @@
+Exercici 4. Test dels accessors?
+A partir de les respostes al FAQ 4.4 i 4.5, descriu quan té sentit fer un cas de test als mètodes get/set i quan no.
+
+
+Té sentit fer els test d'aquests mètodes quan hi han sospites que algun element del codi pot petar o que aquests get/set poden contribuir en el trencament del programa.
+
+Tot i això, quan realment cobra sentit fer aquests tests és quan ens trobem davant d'un codi amb múltiples constructors i volem verificar el seu ús correcte, ja que d'altra manera només estem testejant que el compilador o l'interpret funciona correctament.
