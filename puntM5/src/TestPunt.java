@@ -40,12 +40,17 @@ public class TestPunt {
 
 	@Test
 	public void testSuma() {
-		// comprova que el métode suma(Punt p) funcioni correctament
+		// comprova que el mï¿½tode suma(Punt p) funcioni correctament
 		Punt p = new Punt(5, 2);
 		Punt q = new Punt(5, 4);
 		p.suma(q);
 		Assert.assertEquals(10, p.getX());
 		Assert.assertEquals(6, p.getY());
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testIllegalArgumentException() {
+		Punt p = new Punt(-3, -4);
 	}
 
 	public static void main(String args[]) {
