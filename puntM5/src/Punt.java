@@ -7,8 +7,8 @@ public class Punt {
 	}
 
 	public Punt(int x, int y) {
-		this.coord[0] = x;
-		this.coord[1] = y;
+		setX(x);
+		setY(y);
 	}
 
 	public int getX() {
@@ -19,12 +19,20 @@ public class Punt {
 		return coord[1];
 	}
 
-	public void setX(int x) {
-		this.coord[0] = x;
+	public void setX(int x) throws IllegalArgumentException {
+		if (x>=0) {
+				this.coord[0] = x;
+		}else {
+			throw new IllegalArgumentException();
+		}
 	}
 
-	public void setY(int y) {
-		this.coord[1] = y;
+	public void setY(int y) throws IllegalArgumentException {
+		if (y>=0) {
+				this.coord[1] = y;
+		}else {
+			throw new IllegalArgumentException();
+		}
 	}
 
 	public void suma(Punt p) {
